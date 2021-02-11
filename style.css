@@ -1,0 +1,861 @@
+.card {
+    -webkit-box-shadow: 10px 10px 31px -5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 31px -5px rgba(0,0,0,0.3);
+    box-shadow: 2px 5px 24px -5px rgba(0,0,0,0.34);
+}
+
+#titleCard {
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.09);
+    background: url(//cdn.usf.edu/_resources/images/v2/global/header/banner/seal.png) top right no-repeat,linear-gradient(to right,#00573c, #006747);
+    border-radius: 5px;
+}
+
+  .dashboard-btn {
+      width: 100%;
+      /* height: 100px; */
+      background-color: #cdd0cb;
+      font-size: 30px;
+      border-radius: 25px;
+      border: none;
+      margin-bottom: 20px;
+  }
+
+  .dashboard-btn:focus {
+      outline: none;
+  }
+
+  .dashboard-btn:hover {
+      background-color: #CFC493;
+  }
+
+  .dashboard-btn-txt {
+      margin-left: 5px;
+  }
+
+  .dashboard-btn-icons {
+      font-size: 80px;
+      vertical-align: middle;
+  }
+
+  #profile-icon {
+      font-size: 150px;
+      position: relative;
+      top: 15px;
+  }
+
+  p.profile {
+      margin-top: 1em;
+  }
+
+  .profile-item {
+      margin-top: 10px;
+      margin-left: 40px;
+  }
+
+  .profile-item a {
+      color: black !important;
+      font-weight: unset;
+  }
+
+  span.profile {
+    font-weight: bold;
+    color: #006747;
+  }
+
+  #profile-u-number {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 black;
+    font-size: 1.25rem;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+  }
+
+  .homepage-card {
+      background-color: #dddddd;
+      border-radius: 25px;
+      box-shadow: 8px 8px 0px #aaaaaa;
+      margin: 20px;
+      margin-top: 5px;
+      padding: 10px;
+      padding-bottom: 60px;
+  }
+
+  .honors-req-container {
+      margin: 2px;
+  }
+
+  .honors-req {
+      margin: 10px;
+  }
+
+  .honors-req-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .honors-req-icons {
+      font-size: 30px;
+      margin: 15px;
+      vertical-align: middle;
+  }
+
+  .honors-form-btn {
+      margin-left: 20px;
+  }
+
+  #ava-card {
+    background-color: #006747;
+    border-radius: 15px;
+  }
+
+#chat-card {
+  height: 90vh;
+}
+
+#ava-heading-mobile {
+    padding: 2px;
+}
+
+.event-card {
+    border-radius: 3px;
+    border: 1px solid #006747;
+    align-items: stretch;
+    height: 100%;
+    box-shadow: 0 2px 8px 0 #006747;
+    width: 100%;
+    margin: 0.75em;
+    padding: 25px;
+}
+
+.event-card-text {
+    margin: 5px 0;
+}
+
+.event-card-text .event-info {
+    font-weight: bold;
+}
+
+.event-icons {
+    vertical-align: middle;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#no-events-text {
+    margin-top: 20px;
+}
+
+.event-col {
+    width: 33%;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #F8F8F8;
+    overflow: scroll;
+}
+
+a, a:visited {
+    color: #fff !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container_MINE {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.messages {
+    width: 100%;
+    overflow-y: scroll;
+    padding: 30px;
+    flex: 2;
+    overflow-wrap: break-word;
+}
+
+.messageRow {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.typing {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #006747;
+    border: 1px solid #006747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px -9px #000000;
+}
+
+.message {
+    border-radius: 5px;
+    padding: 20px;
+    color: #ffffff;
+    min-width: 200px;
+    max-width: 400px;
+    
+}
+    .message p {
+        margin: 0 !important;
+    }
+    .message a {
+    }
+
+    .message.left {
+        background-color: #006747;
+        border: 2px solid #006747;
+        float: left;
+        
+    }
+
+    .message.right {
+        float: right;
+        border: 2px solid #343a40;
+        background-color: #343a40;
+        
+    }
+
+.inputContainer {
+    height: auto;
+    /*height: 80px;*/
+    #padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    text-align: center;
+}
+
+    .input input {
+        width: 83%;
+        padding: 5px 10px;
+        font-size: 1rem;
+        position: relative;
+        top: 2px;
+        display: inline-block;
+    }
+
+    .input button {
+        width: 15%;
+    }
+
+    #chatInput {
+        border: 1px solid #80bdff;
+    }
+    .form-control:focus {
+        box-shadow: none !important;
+        border: 1px solid #80bdff !important;
+    }
+
+#feedback-container {
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    display: none;
+}
+
+    #feedback-left .material-icons {
+        line-height: 0;
+        position: relative;
+        top: 6px;
+    }
+
+    #feedback-received, #feedback-keys, #feedback-mobile{
+        display: none;
+    }
+
+#feedback-ripple {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1000;
+    background-image: radial-gradient(circle, #000 13%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: none;
+    top: 0;
+    left: 0;
+}
+    .feedback-ripple-animation {
+        animation: ripple 1s;
+        display: block !important;
+        opacity: .2 !important;
+    }
+
+.feedback-active {
+    color: #ccc;
+}
+
+.feedback-highlight {
+    animation: highlight 1.5s;
+}
+
+#feedback-count {
+    font-weight: bold;
+}
+
+#sendButton {
+    border-radius: 3px 0 3px 3px;
+}
+
+#feedback-thanks-close {
+    position: absolute;
+    top: -30px;
+    right: -70px;
+    cursor: pointer;
+    user-select: none;
+    color: #ccc;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    font-size: 3rem;
+}
+    #feedback-thanks-close:hover {
+        color: #fff;
+        border-color: #fff;
+    }
+
+#feedback-thanks-overlay {
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .8;
+    display: none;
+}
+
+#feedback-fireworks {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9001;
+    display: none;
+}
+
+#feedback-thanks-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9002;
+    cursor: crosshair;
+    display: none;
+}
+
+
+#feedback-thanks-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+#feedback-thanks-text {
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+}
+
+#feedback-thanks-sub {
+    align-self: flex-end;
+    font-size: 2.7rem;
+    color: #fff;
+    font-family: 'Bad Script', cursive;
+}
+
+@keyframes ripple {
+    0%   {  transform: scale(0,0); }
+    25%   { transform: scale(10,10); }
+    50%   {  transform: scale(7,7); }
+    75%   { transform: scale(10,10); }
+    100% { transform: scale(0,0); }
+}
+
+@keyframes highlight {
+    0% { background-color: #007bff; }
+    50% { background-color: #47a0ff; }
+    100% { background-color: #007bff; }
+}
+
+@media (min-width: 771px) and (max-height: 685px)  {
+    html, body, .container {
+        height: 100%;
+    }
+    #chat-card {
+        min-height: 300px;
+        height: 100%;
+    }
+     #flex-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+    }
+    #chat-card-container {
+        flex: 2;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 993px) {
+    .event-container {
+        flex-direction: column;
+    }
+
+    .event-col {
+        margin: 0 auto;
+    }
+
+    #mobile-grad-req-link {
+        margin-bottom: 10px;
+    }
+
+    #view-events-btn {
+        margin-top: 20px;
+    }
+}
+
+/*
+@media (min-width: 990px) and (max-width: 1200px) {
+    .honors-form-btn {
+        margin-left: 20px;
+    }
+} */
+
+@media (max-width: 1200px) {
+    .honors-req-name {
+        display: block;
+    }
+
+    .honors-req-container {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+        .dashboard-btn {
+        height: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    /* html, body {
+        height: 100%;
+    } */
+    #feedback-thanks-close {
+        top: -20px;
+        right: -30px;
+        font-size: 1.8rem;
+    }
+    #feedback-thanks-container {
+        width: 75%;
+    }
+    #feedback-thanks-text {
+        font-size: 2rem;
+    }
+    #feedback-thanks-sub {
+        font-size: 1.4rem;
+    }
+    /* #flex-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+    } */
+    #applicationTitle, #applicationTitle .material-icons {
+        font-size: 1.7rem !important;
+    }
+    /* .container-fluid, .container {
+        min-width: 375px;
+        max-width: none;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    } */
+    #chat-card-container {
+        flex: 2;
+    }
+    #titleCardDiv {
+        margin: 15px 40px !important;
+    }
+    .messages {
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    .message {
+        width: 100%;
+        min-width: auto;
+        max-width: auto;
+    }
+    #feedback-instructions {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+        #feedback-instructions > div {
+          flex: 1;
+
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+    #feedback-left {
+        float: left;
+        flex: 3 !important;
+    }
+        #feedback-left > .material-icons {
+            line-height: 1;
+            position: static;
+            top: 0;
+        }
+    #feedback-mobile {
+        display: block;
+    }
+    #feedback-desktop {
+        display: none;
+    }
+    #feedback-keys {
+        float: left;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+        #feedback-keys > div {
+          flex: 1;
+          padding: 5px 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          user-select: none;
+        }
+        #feedback-keys .material-icons {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    .input input {
+        width: 72%;
+    }
+
+    .input button {
+        width: 70px;
+    }
+}
+
+/*
+@media (min-width: 1000px) {
+    .homepage-card {
+        height: 48%;
+    }
+} */
+
+/* License MIT, SpinKit, Copyright (c) 2015 Tobias Ahlin */
+.spinner {
+    text-align: center;
+}
+
+    .spinner > div {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        margin: 2px;
+        border-radius: 100%;
+        display: inline-block;
+        animation: sk-bouncedelay 1s infinite ease-in-out both;
+    }
+
+    .spinner .bounce1 {
+        animation-delay: -0.62s;
+    }
+
+    .spinner .bounce2 {
+        animation-delay: -0.40s;
+    }
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(.65);
+    }
+
+    40% {
+        transform: scale(1.0);
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+.btn-to-input {
+    margin: 5px;
+}
+#expandButton{
+    margin: 0.5rem auto;
+}
+
+.circular-progress-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: 120px;
+    margin: 0.25rem auto;
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+    z-index: 15;
+    background-color: white;
+    overflow: hidden;
+}
+
+.circular-progress-bar {
+    background-color: #006747;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    transition-property: width;
+    transition-duration: 1s;
+    z-index: 4;
+}
+
+.circular-progress-value {
+    color: #006747;
+    padding: 25%;
+    vertical-align: middle;
+    font-weight: bold;
+    z-index: 10;
+    visibility: visible;
+    user-select: none;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-shadow: 0 0 2px #006747;
+    border-radius: 50%;
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-color: #006747;
+    border: solid;
+}
+
+.circular-progress-text {
+    z-index: 100;
+    font-size: 1em;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#academic-progress-container {
+    background-image: url("./images/books.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    position: relative;
+}
+
+#community-progress-container {
+    background-image: url("./images/flower.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    position: relative;
+}
+
+#global-progress-container {
+    background-image: url("./images/mountains.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    position: relative;
+}
+
+.honors-progress {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+#grad-progress {
+    margin-bottom: 15px;
+}
+
+#grad-req-btn {
+    margin-left: 2px;
+}
+
+#view-events-btn {
+    margin-left: 2px;
+}
+
+.honors-progress-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+ 
+.honors-progress-col {
+    width: 33%;
+}
+
+@media (max-width: 993px) {
+    .honors-progress-container {
+        flex-direction: column;
+    }
+
+    .honors-progress-col {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .honors-progress {
+        width: 225px;
+    }
+
+    .circular-progress-container {
+        left: 140px;
+    }
+
+    .event-col {
+        width: 100%;
+    }
+
+    #chat-card {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 994px) and (max-width: 1200px) {
+    #grad-progress {
+        margin-top: 20px;
+    }
+
+    .circular-progress-container {
+        left: 90px;
+        margin: 0.25rem auto;
+    }
+
+    .honors-progress {
+        width: 125px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 460px) { /* Was 400 */
+    .honors-progress {
+        width: 125px;
+        margin-bottom: -10px;
+    }
+
+    .circular-progress-container {
+        left: 80px;
+    }
+
+    .dashboard-btn-icons {
+        font-size: 50px;
+    }
+
+    .dashboard-btn-txt {
+        margin: 0;
+    }
+
+    .dashboard-btn {
+        height: 90px;
+        font-size: 30px;
+    }
+
+    .circular-progress-text {
+        display: inline;
+    }
+
+    .circular-progress-value {
+        padding: 20px;
+    }
+
+    #ava-card-inner {
+        margin: 9px;
+    }
+}
+
+@media (max-width: 380px) {
+    .dashboard-btn-icons {
+        font-size: 40px;
+    }
+
+    #view-events {
+        display: block;
+    }
+}
+
+@media (max-width: 340px) {
+    .honors-progress {
+        width: 110px;
+        left: 15px;
+    }
+
+    .circular-progress-container {
+        left: 60px;
+    }
+}
+
+@media (min-width: 555px) and (max-width: 1010px) {
+    #view-events {
+        display: block;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 993px) {
+    .event-col {
+        margin-bottom: 15px;
+    }
+}

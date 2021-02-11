@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- Custom toggle buttons CSS and JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Judy Genshaft Honors College Portal</title>
+</head>
+<body>
+    <!-- Application Content-->
+
+            <div class="container-fluid main-container" id="pageContainer" style="height: 100%">
+                <div class="container" id="flex-container">
+                    <div class="card" style="margin: 15px 0px 15px 0px; border-width: 0px;" id="titleCardDiv">
+                        <div class="card-body" id="titleCard">
+                            <h1 class="display-4 text-light text-center" id="applicationTitle" style="margin: 0px;">Judy Genshaft Honors College Portal
+                        <!-- <i class="material-icons" style="font-size: 3rem;">forum</i> -->
+                            </h1>
+                        </div>
+                    </div>
+                    <h1 class="text-center text-primary" id="welcome-mobile">
+                        Welcome<span class="welcome-text"></span>
+                    </h1>
+                    <div class="row" style="text-align: center;">
+                <!--    <div class="col-lg-4">
+                            <button class="dashboard-btn">
+                                <span class="material-icons dashboard-btn-icons">
+                                    notifications_none
+                                </span>
+                                <span class="dashboard-btn-txt">Messages</span>
+                            </button>
+                        </div> -->
+                        <div class="col-lg-6"> <!--Change to col-lg-4 when Messages functionality is built-->
+                            <a href="https://usfweb.usf.edu/honors/student-rsvp" target="_blank">
+                                <button class="dashboard-btn">
+                                    <span class="material-icons dashboard-btn-icons">
+                                        event_available
+                                    </span>
+                                    <span class="dashboard-btn-txt">Events</span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-lg-6"> <!--Change to col-lg-4 when Messages functionality is built-->
+                            <a href="https://usfweb.usf.edu/honors/student-checkin" target="_blank">
+                                <button class="dashboard-btn">
+                                    <span class="material-icons dashboard-btn-icons">
+                                        people
+                                    </span>
+                                    <span class="dashboard-btn-txt">Advising Check-In</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 class="text-primary text-center" id="grad-progress">
+                        My Graduation Progress
+                        <a href="https://www.usf.edu/honors/2019-journey-map.pdf" target="_blank" id="grad-req-link">
+                            <button type="button" class="btn btn-lg btn-primary" id="grad-req-btn">
+                                View Requirements
+                            </button>
+                        </a>
+                    </h1>
+                    <div class="text-center" id="mobile-grad-req-link">
+                        <a href="https://www.usf.edu/honors/2019-journey-map.pdf" target="_blank">
+                            <button type="button" class="btn btn-lg btn-primary">
+                                View Requirements
+                            </button>
+                        </a>
+                    </div>
+                    <div class="honors-progress-container">
+                        <div id="academic-progress-container" class="honors-progress-col">
+                            <div class="honors-progress text-center">
+                                <h6 class="text-primary">
+                                    Academic Completion
+                                </h6>
+                                <a href="https://usfweb.usf.edu/Honors/student-academic" target="_blank">
+                                    <button type="button" class="btn btn-sm btn-primary">Open Form</button>
+                                </a>
+                            </div>
+                            <div class="circular-progress-container">
+                                <div class="circular-progress-bar" id="academic-progress"></div>
+                                <span class="circular-progress-value">
+                                    <span class="circular-progress-text" id="academic-text"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="community-progress-container" class="honors-progress-col">
+                            <div class="honors-progress text-center">
+                                <h6 class="text-primary">
+                                    Community Engagement
+                                </h6>
+                                <a href="https://usfweb.usf.edu/Honors/student-community" target="_blank">
+                                    <button type="button" class="btn btn-sm btn-primary">Open Form</button>
+                                </a>
+                            </div>
+                            <div class="circular-progress-container">
+                                <div class="circular-progress-bar" id="service-progress"></div>
+                                <span class="circular-progress-value">
+                                    <span class="circular-progress-text" id="service-text"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="global-progress-container" class="honors-progress-col">
+                            <div class="honors-progress text-center">
+                                <h6 class="text-primary">
+                                    Global Experience
+                                </h6>
+                                <a href="https://usfweb.usf.edu/Honors/student-global" target="_blank">
+                                    <button type="button" class="btn btn-sm btn-primary">Open Form</button>
+                                </a>
+                            </div>
+                            <div class="circular-progress-container">
+                                <div class="circular-progress-bar" id="global-progress"></div>
+                                <span class="circular-progress-value">
+                                    <span class="circular-progress-text" id="global-text"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h1 class="text-center text-primary" id="welcome">
+                                Welcome<span class="welcome-text"></span>
+                            </h1>
+                        </div>
+                        <div class="col-lg-7">
+                            <h1 id="ava-heading" class="text-center text-primary">Chat with AVA</h1>
+                        </div>
+                    </div>
+                    <div class="center-text " style="justify-content:center">
+                        <button class="collapse-btn btn btn-lg btn-primary center-text" data-toggle="collapse" id="expandButton" data-target="#collapsingSidebar">
+                            View Dashboard
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 small-col" id="collapsingSidebar">
+                            <div class="card homepage-card">
+                                <div style="text-align: center;">
+                                    <span id="profile-icon" class="material-icons">
+                                        person
+                                    </span>
+                                    <h1 id="profile-name"></h1>
+                                    <div id="profile-u-number-container"></div>
+                                    <p class="profile">
+                                        <span id="profile-campus"></span>
+                                    </p>
+                                    <p>
+                                        <span id="profile-major-1"></span> <span id="profile-major-2"></span> <span id="profile-minor"></span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="profile-item">
+                                        <span class="profile">Advisor: </span>
+                                        <span id="profile-advisor"></span>
+                                    </p>
+                                    <p class="profile-item">
+                                        <span class="profile">Email: </span>
+                                        <span id="profile-email"></span>
+                                    </p>
+                                    <p class="profile-item">
+                                        <span class="profile">Entry Term: </span>
+                                        <span id="profile-entry-term"></span>
+                                    </p>
+                                    <p class="profile-item">
+                                        <span class="profile">USF GPA: </span>
+                                        <span id="profile-usf-gpa"></span>
+                                    </p>
+                                    <p class="profile-item">
+                                        <span class="profile">Overall GPA: </span>
+                                        <span id="profile-overall-gpa"></span>
+                                    </p>
+                                    <p class="profile-item">
+                                        <span class="profile">Honors Status: </span>
+                                        <span id="profile-honors-status"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <h1 id="ava-heading-mobile" class="center-text text-primary">Chat with AVA</h1>
+                            <div class="card" id="ava-card">
+                                <div class="card" style="margin: 15px;">
+                                    <div class="card-body" id="chat-card">
+                                        <div class="container_MINE">
+                                            <div class="messages">
+                                            </div>
+                                            <div class="inputContainer">
+                                                <div class="input-group mb-3" style="position: relative; top: 15px;">
+                                                    <div id="feedback-container">
+                                                        <div id="feedback-instructions">
+                                                            <div id="feedback-left">
+                                                                <span id="feedback-desktop">Press your up arrow key <i
+                                                                    class="material-icons">arrow_upward</i> or down arrow key <i
+                                                                        class="material-icons">arrow_downward</i> to indicate if AVA gave
+                                                            the expected answer or an incorrect answer. For extended feedback, click <a href="https://usf.az1.qualtrics.com/jfe/form/SV_baor0k9hZzAPfff" target="_blank">here</a> to take the AVA TAM survey.</span>
+                                                                <span id="feedback-mobile">Rate if AVA gave a good or bad answer. For extended feedback, click <a href="https://usf.az1.qualtrics.com/jfe/form/SV_baor0k9hZzAPfff" target="_blank">here</a> to take the AVA TAM survey.</span>
+                                                            </div>
+                                                            <div id="feedback-keys">
+                                                                <div><i class="material-icons" id="feedback-positive">thumb_up</i></div>
+                                                                <div><i class="material-icons" id="feedback-negative">thumb_down</i></div>
+                                                            </div>
+                                                        </div>
+                                                        <span id="feedback-received">Feedback received. Rate <span
+                                                            id="feedback-count">40</span> more for a special "thank you".</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="chatInput"
+                                                        placeholder="Type your question here..." aria-label="Recipient's username"
+                                                        aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="button" id="sendButton">
+                                                            <i class="material-icons"
+                                                                style="font-size: 1.5rem; position: relative; top: 2px;">send</i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h1 class="text-primary text-center">
+                        Upcoming Events
+                        <a href="https://usfweb.usf.edu/honors/student-rsvp" target="_blank" id="view-events">
+                            <button type="button" class="btn btn-lg btn-primary" id="view-events-btn">
+                                View All Events
+                            </button>
+                        </a>
+                    </h1>
+                    <h6 class="text-center" id="no-events-text"></h6>
+                    <div class="event-container">
+                        <div class="event-col" id="event-card-1" style="display: none;">
+                            <section class="event-card">
+                                <h3 class="text-primary event-name">Event Name</h3>
+                                <h6>
+                                    <span class="event-date">
+                                        Date 
+                                    </span>
+                                    | 
+                                    <span class="event-time">
+                                        Time
+                                    </span>
+                                </h6>
+                                <hr>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            place
+                                        </span>
+                                        Location: 
+                                    </span>
+                                    <span class="event-location"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            category
+                                        </span>
+                                        Category: 
+                                    </span>
+                                    <span class="event-category"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            event_available
+                                        </span>
+                                        RSVP Status: 
+                                    </span>
+                                    <span class="event-rsvp-status"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            supervisor_account
+                                        </span>
+                                        Capacity: 
+                                    </span>
+                                    <span class="event-capacity"></span>
+                                </p>
+                                <div class="text-center">
+                                    <a class="event-link" target="_blank">
+                                        <button type="button" class="btn btn-primary">
+                                                RSVP
+                                        </button>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="event-col" id="event-card-2" style="display: none;">
+                            <section class="event-card">
+                                <h3 class="text-primary event-name">Event Name</h3>
+                                <h6>
+                                    <span class="event-date">
+                                        Date 
+                                    </span>
+                                    | 
+                                    <span class="event-time">
+                                        Time
+                                    </span>
+                                </h6>
+                                <hr>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            place
+                                            </span>
+                                        Location: 
+                                    </span>
+                                    <span class="event-location"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            category
+                                        </span>
+                                        Category: 
+                                    </span>
+                                    <span class="event-category"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            event_available
+                                        </span>
+                                        RSVP Status: 
+                                    </span>
+                                    <span class="event-rsvp-status"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            supervisor_account
+                                        </span>
+                                        Capacity: 
+                                    </span>
+                                    <span class="event-capacity"></span>
+                                </p>
+                                <div class="text-center">
+                                    <a class="event-link" target="_blank">
+                                        <button type="button" class="btn btn-primary">
+                                                RSVP
+                                        </button>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="event-col" id="event-card-3" style="display: none;">
+                            <section class="event-card">
+                                <h3 class="text-primary event-name">Event Name</h3>
+                                <h6>
+                                    <span class="event-date">
+                                        Date 
+                                    </span>
+                                    | 
+                                    <span class="event-time">
+                                        Time
+                                    </span>
+                                </h6>
+                                <hr>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            place
+                                        </span>
+                                        Location: 
+                                    </span>
+                                    <span class="event-location"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            category
+                                        </span>
+                                        Category: 
+                                    </span>
+                                    <span class="event-category"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            event_available
+                                        </span>
+                                        RSVP Status: 
+                                    </span>
+                                    <span class="event-rsvp-status"></span>
+                                </p>
+                                <p class="event-card-text">
+                                    <span class="text-primary event-info">
+                                        <span class="material-icons event-icons">
+                                            supervisor_account
+                                        </span>
+                                        Capacity: 
+                                    </span>
+                                    <span class="event-capacity"></span>
+                                </p>
+                                <div class="text-center">
+                                    <a class="event-link" target="_blank">
+                                        <button type="button" class="btn btn-primary">
+                                                RSVP
+                                        </button>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="feedback-ripple"></div>
+            <div id="feedback-thanks-overlay">
+            </div>
+            <canvas id="feedback-fireworks"></canvas>
+            <div id="feedback-thanks-flex">
+                <div id="feedback-thanks-container">
+                    <div id="feedback-thanks-text">
+                        Thanks for helping make AVA better!
+                <i class="material-icons" id="feedback-thanks-close">close</i>
+                    </div>
+                    <div id="feedback-thanks-sub">
+                        &mdash; Sincerely,<br>
+                        The Dev Team
+                    </div>
+                </div>
+            </div>
+    <script src="controller.js"></script>
+</body>
+</html>
